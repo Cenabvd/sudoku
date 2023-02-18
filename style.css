@@ -4,6 +4,13 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+:root{
+    --bgc : #4289ff;
+    --text-color : #002d63;
+}
+.active{
+    background-color: #dde6ff;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -11,19 +18,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4289ff;
+    background-color: var(--bgc);
 }
+
 input{
     text-align: center;
     font-size: 1.7rem;
     font-weight: bold;
-    color: #002d63;
+    color: var(--text-color);
     border: none;
-    border: 1px solid #4289ff;
+    border: 1px solid var(--bgc) ;
+    cursor: pointer;
+    caret-color: transparent;
 }
 input:focus{
-    outline: none;
+    outline: none;  
 }
+input:hover{
+    background-color: #dde6ff;
+}
+
 
 .inputs-parent{
     display: grid;
@@ -236,9 +250,9 @@ input:nth-child(78){
         text-align: center;
         font-size: 3rem;
         font-weight: bold;
-        color: #002d63;
+        color: var(--text-color);
         border: none;
-        border: 1px solid #4289ff;
+        border: 1px solid var(--bgc);
     }
 }
 @media screen and (max-width : 1080px){
@@ -246,9 +260,9 @@ input:nth-child(78){
         text-align: center;
         font-size: 2rem;
         font-weight: bold;
-        color: #002d63;
+        color: var(--text-color);
         border: none;
-        border: 1px solid #4289ff;
+        border: 1px solid var(--bgc);
     }
     .inputs-parent{
         display: grid;
@@ -267,7 +281,7 @@ input:nth-child(78){
         font-weight: bold;
         color: #002d63;
         border: none;
-        border: 1px solid #4289ff;
+        border: 1px solid var(--bgc);
     }
     .inputs-parent{
         display: grid;
@@ -284,7 +298,7 @@ input:nth-child(78){
         text-align: center;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #002d63;
+        color: var(--text-color);
         border: none;
         border: 1px solid #4289ff;
     }
@@ -304,9 +318,9 @@ input:nth-child(78){
         text-align: center;
         font-size: 1.5rem;
         font-weight: bold;
-        color: #002d63;
+        color: var(--bgc);
         border: none;
-        border: 1px solid #4289ff;
+        border: 1px solid var(--bgc);
     }
     .inputs-parent{
         display: grid;
